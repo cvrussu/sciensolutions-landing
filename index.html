@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScienSolutions — Exámenes Clínicos a Domicilio en Santiago | Panel Viral, Dermatoscopía IA</title>
+    <meta name="description" content="Exámenes clínicos a domicilio en Santiago, Chile. Panel viral respiratorio, análisis de lunares con IA, exámenes de sangre, check-up geriátrico y pediátrico. Agenda hoy.">
+    <meta name="keywords" content="exámenes a domicilio Santiago, panel viral respiratorio, PCR a domicilio, análisis lunares IA, exámenes de sangre domicilio, check-up geriátrico, exámenes pediátricos, ScienSolutions, Urano IA">
+    <meta name="author" content="ScienSolutions by Urano IA">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sciensolutions.cl">
+    <meta property="og:title" content="ScienSolutions — Exámenes Clínicos a Domicilio en Santiago">
+    <meta property="og:description" content="La ciencia va a tu hogar. Panel viral, dermatoscopía con IA, exámenes de sangre y más. Agenda tu hora hoy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sciensolutions.cl">
+    <meta property="og:locale" content="es_CL">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: #1a1a2e; background: #fff; line-height: 1.6; overflow-x: hidden; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; }
+        :root {
+            --blue: #1E88E5; --blue-dark: #1565C0; --blue-light: #E3F2FD; --blue-lighter: #f0f7ff;
+            --orange: #FF6D00; --orange-hover: #E65100; --white: #ffffff;
+            --gray-50: #f8fafc; --gray-100: #f1f5f9; --gray-200: #e2e8f0; --gray-300: #cbd5e1;
+            --gray-500: #64748b; --gray-600: #475569; --gray-700: #334155; --gray-800: #1e293b; --gray-900: #0f172a;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08); --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+            --shadow-lg: 0 12px 40px rgba(0,0,0,0.12); --shadow-xl: 0 20px 60px rgba(0,0,0,0.15);
+            --radius: 12px; --radius-lg: 20px; --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .section { padding: 100px 0; }
+        .section-label { display: inline-block; background: var(--blue-light); color: var(--blue); font-weight: 600; font-size: 0.85rem; padding: 6px 16px; border-radius: 100px; margin-bottom: 16px; letter-spacing: 0.03em; }
+        .section-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: var(--gray-900); line-height: 1.2; margin-bottom: 16px; }
+        .section-subtitle { font-size: 1.125rem; color: var(--gray-500); max-width: 640px; line-height: 1.7; }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 32px; border-radius: 100px; font-weight: 600; font-size: 1rem; cursor: pointer; border: none; transition: var(--transition); font-family: inherit; }
+        .btn-primary { background: var(--orange); color: var(--white); box-shadow: 0 4px 20px rgba(255,109,0,0.35); }
+        .btn-primary:hover { background: var(--orange-hover); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,109,0,0.45); }
+        .btn-secondary { background: var(--white); color: var(--blue); border: 2px solid var(--blue); }
+        .btn-secondary:hover { background: var(--blue); color: var(--white); transform: translateY(-2px); }
+        .btn-white { background: var(--white); color: var(--blue-dark); box-shadow: var(--shadow-md); }
+        .btn-white:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        .animate { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .animate.visible { opacity: 1; transform: translateY(0); }
+        .animate-delay-1 { transition-delay: 0.1s; } .animate-delay-2 { transition-delay: 0.2s; } .animate-delay-3 { transition-delay: 0.3s; }
+        .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 16px 0; transition: var(--transition); background: transparent; }
+        .navbar.scrolled { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); box-shadow: var(--shadow-sm); padding: 10px 0; }
+        .navbar .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.25rem; color: var(--white); transition: var(--transition); }
+        .navbar.scrolled .logo { color: var(--gray-900); }
+        .logo-icon { width: 40px; height: 40px; background: var(--blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: white; }
+        .logo small { display: block; font-size: 0.65rem; font-weight: 400; opacity: 0.7; margin-top: -2px; }
+        .nav-links { display: flex; align-items: center; gap: 32px; }
+        .nav-links a { font-size: 0.9rem; font-weight: 500; color: rgba(255,255,255,0.85); transition: var(--transition); }
+        .navbar.scrolled .nav-links a { color: var(--gray-600); }
+        .nav-links a:hover { color: var(--orange); }
+        .nav-cta { background: var(--orange) !important; color: var(--white) !important; padding: 10px 24px !important; border-radius: 100px !important; font-weight: 600 !important; }
+        .nav-cta:hover { background: var(--orange-hover) !important; }
+        .mobile-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
+        .mobile-toggle span { width: 24px; height: 2px; background: var(--white); transition: var(--transition); border-radius: 2px; }
+        .navbar.scrolled .mobile-toggle span { background: var(--gray-800); }
+        .hero { position: relative; min-height: 100vh; display: flex; align-items: center; background: linear-gradient(135deg, #0d47a1 0%, #1565C0 40%, #1E88E5 100%); overflow: hidden; }
+        .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,109,0,0.1) 0%, transparent 40%); }
+        .hero-bg-shapes { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+        .hero-bg-shapes .shape { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.04); }
+        .hero-bg-shapes .shape-1 { width: 600px; height: 600px; top: -200px; right: -100px; }
+        .hero-bg-shapes .shape-2 { width: 400px; height: 400px; bottom: -150px; left: -100px; }
+        .hero-bg-shapes .shape-3 { width: 200px; height: 200px; top: 40%; left: 60%; animation: float 6s ease-in-out infinite; }
+        .hero .container { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding-top: 100px; padding-bottom: 60px; }
+        .hero-content { color: var(--white); }
+        .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.15); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); padding: 8px 20px; border-radius: 100px; font-size: 0.85rem; font-weight: 500; margin-bottom: 24px; animation: fadeInUp 0.6s ease; }
+        .hero-badge .dot { width: 8px; height: 8px; background: #4caf50; border-radius: 50%; animation: pulse 2s ease-in-out infinite; }
+        .hero h1 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2.5rem, 5vw, 3.75rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; animation: fadeInUp 0.6s ease 0.1s both; }
+        .hero h1 span { color: #ffab40; }
+        .hero-description { font-size: 1.2rem; opacity: 0.9; line-height: 1.7; margin-bottom: 36px; max-width: 520px; animation: fadeInUp 0.6s ease 0.2s both; }
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; animation: fadeInUp 0.6s ease 0.3s both; }
+        .hero-stats { display: flex; gap: 40px; margin-top: 48px; animation: fadeInUp 0.6s ease 0.4s both; }
+        .hero-stat { text-align: center; }
+        .hero-stat .number { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2rem; font-weight: 800; display: block; }
+        .hero-stat .label { font-size: 0.8rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.05em; }
+        .hero-visual { display: flex; justify-content: center; align-items: center; animation: fadeInUp 0.8s ease 0.3s both; }
+        .hero-card { background: rgba(255,255,255,0.12); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg); padding: 40px; color: white; width: 100%; max-width: 440px; }
+        .hero-card h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 24px; }
+        .hero-card-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .hero-card-item:last-child { border-bottom: none; }
+        .hero-card-icon { width: 44px; height: 44px; background: rgba(255,255,255,0.15); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+        .hero-card-item strong { display: block; font-size: 0.95rem; }
+        .hero-card-item small { opacity: 0.7; font-size: 0.8rem; }
+        .trust-bar { background: var(--gray-50); padding: 30px 0; border-bottom: 1px solid var(--gray-200); }
+        .trust-bar .container { display: flex; align-items: center; justify-content: center; gap: 48px; flex-wrap: wrap; }
+        .trust-item { display: flex; align-items: center; gap: 10px; color: var(--gray-500); font-size: 0.9rem; font-weight: 500; }
+        .trust-icon { font-size: 1.4rem; }
+        .why-home { background: var(--white); }
+        .why-home .header { text-align: center; margin-bottom: 64px; }
+        .why-home .header .section-subtitle { margin: 0 auto; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .benefit-card { background: var(--white); border: 1px solid var(--gray-200); border-radius: var(--radius-lg); padding: 36px; transition: var(--transition); position: relative; overflow: hidden; }
+        .benefit-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--blue); transform: scaleX(0); transition: var(--transition); }
+        .benefit-card:hover { border-color: var(--blue); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+        .benefit-card:hover::before { transform: scaleX(1); }
+        .benefit-icon { width: 56px; height: 56px; background: var(--blue-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 20px; }
+        .benefit-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--gray-900); }
+        .benefit-card p { color: var(--gray-500); font-size: 0.95rem; line-height: 1.6; }
+        .winter-banner { background: linear-gradient(135deg, #0d47a1 0%, #1565C0 50%, #1E88E5 100%); color: var(--white); padding: 80px 0; position: relative; overflow: hidden; }
+        .winter-banner::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+        .winter-banner .container { position: relative; z-index: 2; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        .winter-content h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 800; margin-bottom: 16px; }
+        .winter-content p { font-size: 1.1rem; opacity: 0.9; line-height: 1.7; margin-bottom: 32px; }
+        .winter-features { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+        .winter-feature { display: flex; align-items: center; gap: 12px; font-size: 1rem; }
+        .winter-feature .check { width: 28px; height: 28px; background: rgba(76,175,80,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0; }
+        .urgency-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,109,0,0.2); border: 1px solid rgba(255,109,0,0.4); padding: 10px 20px; border-radius: 100px; font-weight: 600; font-size: 0.9rem; margin-bottom: 24px; }
+        .winter-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg); padding: 40px; text-align: center; }
+        .winter-card .price-tag { font-size: 0.9rem; opacity: 0.7; margin-bottom: 8px; }
+        .winter-card .price { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3.5rem; font-weight: 800; margin-bottom: 4px; }
+        .winter-card .price-note { font-size: 0.85rem; opacity: 0.7; margin-bottom: 24px; }
+        .winter-card .includes { text-align: left; margin-bottom: 32px; }
+        .winter-card .includes li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.95rem; display: flex; align-items: center; gap: 10px; }
+        .services { background: var(--gray-50); }
+        .services .header { text-align: center; margin-bottom: 64px; }
+        .services .header .section-subtitle { margin: 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+        .service-card { background: var(--white); border-radius: var(--radius-lg); padding: 40px; border: 1px solid var(--gray-200); transition: var(--transition); display: flex; gap: 24px; }
+        .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: transparent; }
+        .service-card.featured { grid-column: 1 / -1; background: linear-gradient(135deg, #1565C0, #1E88E5); color: white; border: none; }
+        .service-card.featured .service-text p { opacity: 0.9; }
+        .service-icon { width: 64px; height: 64px; background: var(--blue-light); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; flex-shrink: 0; }
+        .service-card.featured .service-icon { background: rgba(255,255,255,0.15); }
+        .service-text h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; }
+        .service-text p { color: var(--gray-500); font-size: 0.95rem; line-height: 1.6; margin-bottom: 16px; }
+        .service-tag { display: inline-block; background: var(--blue-light); color: var(--blue); font-size: 0.75rem; font-weight: 600; padding: 4px 12px; border-radius: 100px; }
+        .service-card.featured .service-tag { background: rgba(255,255,255,0.2); color: white; }
+        .ai-section { background: var(--white); }
+        .ai-section .container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+        .ai-visual { background: linear-gradient(135deg, var(--blue-light), #fff); border-radius: var(--radius-lg); padding: 48px; }
+        .ai-demo { background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow-lg); padding: 28px; }
+        .ai-demo-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--gray-200); }
+        .ai-demo-header .icon { width: 40px; height: 40px; background: var(--blue); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.1rem; }
+        .ai-demo-header span { font-weight: 600; font-size: 0.95rem; color: var(--gray-800); }
+        .ai-result { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 16px 20px; border-radius: 0 8px 8px 0; margin-bottom: 16px; }
+        .ai-result .status { color: #2e7d32; font-weight: 700; font-size: 0.95rem; }
+        .ai-result .desc { color: #33691e; font-size: 0.85rem; margin-top: 4px; }
+        .ai-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        .ai-metric { text-align: center; padding: 12px; background: var(--gray-50); border-radius: 8px; }
+        .ai-metric .val { font-weight: 800; color: var(--blue); font-size: 1.3rem; display: block; }
+        .ai-metric .lbl { font-size: 0.7rem; color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.05em; }
+        .ai-content h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 800; color: var(--gray-900); margin-bottom: 16px; }
+        .ai-content > p { color: var(--gray-500); font-size: 1.1rem; line-height: 1.7; margin-bottom: 32px; }
+        .ai-features { display: flex; flex-direction: column; gap: 20px; }
+        .ai-feature { display: flex; gap: 16px; align-items: flex-start; }
+        .ai-feature-icon { width: 44px; height: 44px; background: var(--blue-light); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; }
+        .ai-feature h4 { font-size: 1rem; font-weight: 700; color: var(--gray-800); }
+        .ai-feature p { font-size: 0.9rem; color: var(--gray-500); margin-top: 4px; }
+        .pricing { background: var(--gray-50); }
+        .pricing .header { text-align: center; margin-bottom: 64px; }
+        .pricing .header .section-subtitle { margin: 0 auto; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .price-card { background: var(--white); border: 2px solid var(--gray-200); border-radius: var(--radius-lg); padding: 40px; text-align: center; transition: var(--transition); position: relative; }
+        .price-card:hover { border-color: var(--blue); box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+        .price-card.popular { border-color: var(--blue); box-shadow: var(--shadow-lg); }
+        .popular-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--orange); color: white; padding: 6px 20px; border-radius: 100px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; }
+        .price-card .emoji { font-size: 2.5rem; margin-bottom: 16px; display: block; }
+        .price-card h3 { font-size: 1.3rem; font-weight: 700; color: var(--gray-900); margin-bottom: 8px; }
+        .price-card .desc { color: var(--gray-500); font-size: 0.9rem; margin-bottom: 24px; }
+        .price-card .price { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--gray-900); margin-bottom: 4px; }
+        .price-card .price-from { font-size: 0.85rem; color: var(--gray-500); margin-bottom: 28px; }
+        .price-card .features { text-align: left; margin-bottom: 32px; }
+        .price-card .features li { padding: 10px 0; border-bottom: 1px solid var(--gray-100); font-size: 0.9rem; color: var(--gray-600); display: flex; align-items: center; gap: 10px; }
+        .price-card .features li::before { content: '\2713'; color: #4caf50; font-weight: 700; }
+        .price-card .btn { width: 100%; justify-content: center; }
+        .how-it-works { background: var(--white); }
+        .how-it-works .header { text-align: center; margin-bottom: 64px; }
+        .how-it-works .header .section-subtitle { margin: 0 auto; }
+        .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; position: relative; }
+        .steps::before { content: ''; position: absolute; top: 40px; left: 12.5%; right: 12.5%; height: 2px; background: linear-gradient(90deg, var(--blue), var(--orange)); z-index: 0; }
+        .step { text-align: center; position: relative; z-index: 1; }
+        .step-number { width: 80px; height: 80px; background: var(--blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.8rem; font-weight: 800; margin: 0 auto 20px; box-shadow: 0 4px 20px rgba(30,136,229,0.3); }
+        .step h3 { font-size: 1.05rem; font-weight: 700; color: var(--gray-800); margin-bottom: 8px; }
+        .step p { font-size: 0.9rem; color: var(--gray-500); line-height: 1.5; }
+        .testimonials { background: var(--blue-light); }
+        .testimonials .header { text-align: center; margin-bottom: 64px; }
+        .testimonials .header .section-subtitle { margin: 0 auto; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+        .testimonial-card { background: var(--white); border-radius: var(--radius-lg); padding: 36px; box-shadow: var(--shadow-sm); transition: var(--transition); }
+        .testimonial-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+        .testimonial-stars { color: #ffc107; font-size: 1.1rem; margin-bottom: 16px; letter-spacing: 2px; }
+        .testimonial-card p { color: var(--gray-600); font-size: 0.95rem; line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+        .testimonial-author { display: flex; align-items: center; gap: 12px; }
+        .testimonial-avatar { width: 48px; height: 48px; background: var(--blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: 700; color: var(--blue); }
+        .testimonial-author strong { display: block; font-size: 0.95rem; color: var(--gray-800); }
+        .testimonial-author small { color: var(--gray-500); font-size: 0.8rem; }
+        .faq { background: var(--white); }
+        .faq .header { text-align: center; margin-bottom: 64px; }
+        .faq .header .section-subtitle { margin: 0 auto; }
+        .faq-list { max-width: 780px; margin: 0 auto; }
+        .faq-item { border: 1px solid var(--gray-200); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; transition: var(--transition); }
+        .faq-item:hover { border-color: var(--blue); }
+        .faq-question { padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; cursor: pointer; font-weight: 600; font-size: 1rem; color: var(--gray-800); background: var(--white); transition: var(--transition); }
+        .faq-question:hover { color: var(--blue); }
+        .faq-toggle { width: 28px; height: 28px; background: var(--blue-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--blue); transition: var(--transition); flex-shrink: 0; }
+        .faq-item.active .faq-toggle { transform: rotate(45deg); background: var(--blue); color: white; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-answer-inner { padding: 0 24px 20px; color: var(--gray-500); font-size: 0.95rem; line-height: 1.7; }
+        .faq-item.active .faq-answer { max-height: 300px; }
+        .contact { background: var(--gray-50); }
+        .contact .container { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+        .contact-info h2 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2rem, 4vw, 2.5rem); font-weight: 800; color: var(--gray-900); margin-bottom: 16px; }
+        .contact-info > p { color: var(--gray-500); font-size: 1.05rem; line-height: 1.7; margin-bottom: 36px; }
+        .contact-methods { display: flex; flex-direction: column; gap: 20px; }
+        .contact-method { display: flex; gap: 16px; align-items: center; }
+        .contact-method-icon { width: 52px; height: 52px; background: var(--blue-light); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+        .contact-method strong { display: block; font-size: 0.95rem; color: var(--gray-800); }
+        .contact-method span { font-size: 0.9rem; color: var(--gray-500); }
+        .contact-form { background: var(--white); border-radius: var(--radius-lg); padding: 40px; box-shadow: var(--shadow-md); }
+        .contact-form h3 { font-size: 1.3rem; font-weight: 700; color: var(--gray-900); margin-bottom: 24px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--gray-700); margin-bottom: 6px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; border: 2px solid var(--gray-200); border-radius: 10px; font-size: 0.95rem; font-family: inherit; transition: var(--transition); background: var(--white); color: var(--gray-800); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 4px rgba(30,136,229,0.1); }
+        .form-group textarea { resize: vertical; min-height: 100px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .contact-form .btn { width: 100%; justify-content: center; margin-top: 8px; }
+        .footer { background: var(--gray-900); color: rgba(255,255,255,0.7); padding: 60px 0 30px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+        .footer-brand .logo { color: white; margin-bottom: 16px; }
+        .footer-brand p { font-size: 0.9rem; line-height: 1.7; margin-bottom: 20px; }
+        .footer-social { display: flex; gap: 12px; }
+        .footer-social a { width: 40px; height: 40px; background: rgba(255,255,255,0.1); border-radius: 10px; display: flex; align-items: center; justify-content: center; transition: var(--transition); font-size: 1.1rem; }
+        .footer-social a:hover { background: var(--blue); color: white; }
+        .footer h4 { color: white; font-size: 1rem; font-weight: 700; margin-bottom: 20px; }
+        .footer ul li { margin-bottom: 12px; }
+        .footer ul li a { font-size: 0.9rem; transition: var(--transition); }
+        .footer ul li a:hover { color: var(--blue); }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; align-items: center; justify-content: space-between; font-size: 0.85rem; }
+        .footer-bottom a { color: var(--blue); }
+        .whatsapp-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; width: 64px; height: 64px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: var(--transition); cursor: pointer; }
+        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.5); }
+        .whatsapp-float svg { width: 32px; height: 32px; fill: white; }
+        .whatsapp-tooltip { position: absolute; right: 76px; top: 50%; transform: translateY(-50%); background: white; color: var(--gray-800); padding: 10px 18px; border-radius: 10px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; box-shadow: var(--shadow-md); opacity: 0; transition: var(--transition); pointer-events: none; }
+        .whatsapp-float:hover .whatsapp-tooltip { opacity: 1; }
+        @media (max-width: 1024px) {
+            .hero .container { grid-template-columns: 1fr; text-align: center; }
+            .hero-content { order: 1; } .hero-visual { order: 2; }
+            .hero-description { margin: 0 auto 36px; }
+            .hero-buttons { justify-content: center; } .hero-stats { justify-content: center; }
+            .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+            .services-grid { grid-template-columns: 1fr; }
+            .winter-banner .container { grid-template-columns: 1fr; }
+            .ai-section .container { grid-template-columns: 1fr; }
+            .ai-visual { order: 2; }
+            .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+            .contact .container { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .section { padding: 70px 0; }
+            .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15,23,42,0.97); flex-direction: column; justify-content: center; gap: 24px; }
+            .nav-links.open { display: flex; }
+            .nav-links a { color: white !important; font-size: 1.2rem; }
+            .mobile-toggle { display: flex; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .steps { grid-template-columns: repeat(2, 1fr); } .steps::before { display: none; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .form-row { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .hero-stats { gap: 24px; } .hero-card { max-width: 100%; }
+        }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero-buttons { flex-direction: column; }
+            .hero-buttons .btn { width: 100%; justify-content: center; }
+            .steps { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo"><div class="logo-icon">&#x1f9ec;</div><div>ScienSolutions<small>by Urano IA</small></div></a>
+            <div class="nav-links" id="navLinks">
+                <a href="#servicios">Servicios</a>
+                <a href="#como-funciona">Proceso</a>
+                <a href="#precios">Precios</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto" class="nav-cta">Agendar Hora</a>
+            </div>
+            <div class="mobile-toggle" id="mobileToggle" onclick="toggleNav()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+        <div class="hero-bg-shapes"><div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="dot"></span> Disponible en Santiago y alrededores</div>
+                <h1>La ciencia va <span>a tu hogar</span></h1>
+                <p class="hero-description">Ex&#225;menes cl&#237;nicos a domicilio con tecnolog&#237;a de punta. Panel viral respiratorio, dermatoscop&#237;a con IA y m&#225;s &#8212; sin filas, sin esperas, con resultados r&#225;pidos.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">&#x1f4c5; Agendar Examen</a>
+                    <a href="#servicios" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.4);color:white;">Ver Servicios</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat"><span class="number">24h</span><span class="label">Resultados</span></div>
+                    <div class="hero-stat"><span class="number">100%</span><span class="label">A domicilio</span></div>
+                    <div class="hero-stat"><span class="number">IA</span><span class="label">Tecnolog&#237;a</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <h3>&#x1f3e5; Servicios Destacados</h3>
+                    <div class="hero-card-item"><div class="hero-card-icon">&#x1f9a0;</div><div><strong>Panel Viral Respiratorio</strong><small>PCR multiplex &#8212; Influenza, VRS, COVID-19</small></div></div>
+                    <div class="hero-card-item"><div class="hero-card-icon">&#x1f52c;</div><div><strong>Dermatoscop&#237;a con IA</strong><small>An&#225;lisis de lunares &#8212; Detecci&#243;n de melanoma</small></div></div>
+                    <div class="hero-card-item"><div class="hero-card-icon">&#x1fa78;</div><div><strong>Ex&#225;menes de Sangre</strong><small>Hemograma, perfil lip&#237;dico, glicemia</small></div></div>
+                    <div class="hero-card-item"><div class="hero-card-icon">&#x1f476;</div><div><strong>Pedi&#225;trico y Geri&#225;trico</strong><small>Paquetes adaptados por edad</small></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-item"><span class="trust-icon">&#x1f6e1;&#xfe0f;</span> Profesionales certificados</div>
+            <div class="trust-item"><span class="trust-icon">&#x26a1;</span> Resultados en 24 horas</div>
+            <div class="trust-item"><span class="trust-icon">&#x1f3e0;</span> 100% a domicilio</div>
+            <div class="trust-item"><span class="trust-icon">&#x1f916;</span> Potenciado por IA</div>
+            <div class="trust-item"><span class="trust-icon">&#x1f4cb;</span> Informe m&#233;dico incluido</div>
+        </div>
+    </div>
+
+    <section class="why-home section" id="por-que">
+        <div class="container">
+            <div class="header">
+                <span class="section-label">Ventajas</span>
+                <h2 class="section-title">&#191;Por qu&#233; ex&#225;menes a domicilio?</h2>
+                <p class="section-subtitle">Sabemos que ir a un laboratorio puede ser inc&#243;modo, especialmente para ni&#241;os y adultos mayores. Nosotros llevamos el laboratorio a ti.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card animate"><div class="benefit-icon">&#x1f3e0;</div><h3>Comodidad total</h3><p>Sin trasladarte, sin filas, sin salas de espera. El profesional llega a tu hogar en el horario que elijas.</p></div>
+                <div class="benefit-card animate animate-delay-1"><div class="benefit-icon">&#x1f468;&#x200d;&#x1f469;&#x200d;&#x1f467;&#x200d;&#x1f466;</div><h3>Ideal para familias</h3><p>Los ni&#241;os se sienten m&#225;s seguros en su entorno. Los adultos mayores evitan el estr&#233;s del traslado.</p></div>
+                <div class="benefit-card animate animate-delay-2"><div class="benefit-icon">&#x23f1;&#xfe0f;</div><h3>Resultados r&#225;pidos</h3><p>Recibe tus resultados en 24 horas directamente en tu correo o WhatsApp, con informe m&#233;dico detallado.</p></div>
+                <div class="benefit-card animate animate-delay-1"><div class="benefit-icon">&#x1f9a0;</div><h3>Menor riesgo de contagio</h3><p>Evita exponerte en cl&#237;nicas y laboratorios. Especialmente importante en temporada de virus respiratorios.</p></div>
+                <div class="benefit-card animate animate-delay-2"><div class="benefit-icon">&#x1f916;</div><h3>Tecnolog&#237;a de punta</h3><p>Usamos inteligencia artificial para an&#225;lisis dermatosc&#243;pico y equipos de PCR multiplex de &#250;ltima generaci&#243;n.</p></div>
+                <div class="benefit-card animate animate-delay-3"><div class="benefit-icon">&#x1f468;&#x200d;&#x2695;&#xfe0f;</div><h3>Profesionales certificados</h3><p>Bioqu&#237;micos y tecn&#243;logos m&#233;dicos con experiencia cl&#237;nica, supervisados por nuestro equipo de salud.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="winter-banner" id="invierno">
+        <div class="container">
+            <div class="winter-content animate">
+                <div class="urgency-badge">&#x2744;&#xfe0f; Temporada Invierno 2026 &#8212; Disponibilidad limitada</div>
+                <h2>Prep&#225;rate para el invierno</h2>
+                <p>De abril a septiembre los virus respiratorios se disparan en Chile. Detecta a tiempo Influenza, VRS y COVID-19 sin salir de tu hogar.</p>
+                <div class="winter-features">
+                    <div class="winter-feature"><div class="check">&#x2713;</div><span>PCR Multiplex: detecta 6+ pat&#243;genos en una sola muestra</span></div>
+                    <div class="winter-feature"><div class="check">&#x2713;</div><span>Ideal para ni&#241;os menores de 5 a&#241;os y adultos mayores de 65</span></div>
+                    <div class="winter-feature"><div class="check">&#x2713;</div><span>Resultados en 24 horas con orientaci&#243;n m&#233;dica incluida</span></div>
+                    <div class="winter-feature"><div class="check">&#x2713;</div><span>Certificado v&#225;lido para licencia m&#233;dica y colegios</span></div>
+                </div>
+                <a href="#contacto" class="btn btn-primary">&#x1f9a0; Agendar Panel Viral</a>
+            </div>
+            <div class="winter-card animate animate-delay-2">
+                <div class="price-tag">PANEL VIRAL RESPIRATORIO</div>
+                <div class="price">$49.990</div>
+                <div class="price-note">Por persona &#183; A domicilio &#183; IVA incluido</div>
+                <ul class="includes">
+                    <li>&#x1f9a0; Influenza A y B</li>
+                    <li>&#x1fab5; Virus Respiratorio Sincicial (VRS)</li>
+                    <li>&#x1f9ec; SARS-CoV-2 (COVID-19)</li>
+                    <li>&#x1f52c; Adenovirus</li>
+                    <li>&#x1f9eb; Parainfluenza 1, 2, 3</li>
+                    <li>&#x1f4cb; Informe m&#233;dico detallado</li>
+                    <li>&#x1f48a; Orientaci&#243;n farmacol&#243;gica</li>
+                </ul>
+                <a href="#contacto" class="btn btn-white" style="width:100%;justify-content:center;">Reservar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section" id="servicios">
+        <div class="container">
+            <div class="header">
+                <span class="section-label">Nuestros Servicios</span>
+                <h2 class="section-title">Ex&#225;menes cl&#237;nicos donde t&#250; est&#233;s</h2>
+                <p class="section-subtitle">Ofrecemos una amplia gama de ex&#225;menes a domicilio, todos realizados por profesionales certificados con equipamiento de &#250;ltima generaci&#243;n.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card featured animate"><div class="service-icon">&#x1f9a0;</div><div class="service-text"><h3>Panel Viral Respiratorio a Domicilio</h3><p>PCR multiplex que detecta Influenza A/B, VRS, COVID-19, Adenovirus y Parainfluenza en una sola toma de muestra nasofar&#237;ngea. Resultados en 24 hrs.</p><span class="service-tag">M&#225;s solicitado en invierno</span></div></div>
+                <div class="service-card animate animate-delay-1"><div class="service-icon">&#x1f52c;</div><div class="service-text"><h3>An&#225;lisis de Lunares con IA</h3><p>Dermatoscop&#237;a digital potenciada con inteligencia artificial. Evaluamos lunares sospechosos para detecci&#243;n temprana de melanoma y otras lesiones cut&#225;neas.</p><span class="service-tag">Tecnolog&#237;a IA</span></div></div>
+                <div class="service-card animate animate-delay-2"><div class="service-icon">&#x1fa78;</div><div class="service-text"><h3>Ex&#225;menes de Sangre a Domicilio</h3><p>Hemograma completo, perfil lip&#237;dico, glicemia, funci&#243;n hep&#225;tica y renal, vitaminas D y B12, tiroides y m&#225;s. Sin necesidad de ir al laboratorio.</p><span class="service-tag">M&#225;s de 50 ex&#225;menes</span></div></div>
+                <div class="service-card animate animate-delay-1"><div class="service-icon">&#x1f474;</div><div class="service-text"><h3>Check-up Geri&#225;trico</h3><p>Paquete completo para adultos mayores: hemograma, perfil metab&#243;lico, funci&#243;n renal, hep&#225;tica, tiroides, vitaminas y marcadores de inflamaci&#243;n.</p><span class="service-tag">Paquete integral</span></div></div>
+                <div class="service-card animate animate-delay-2"><div class="service-icon">&#x1f476;</div><div class="service-text"><h3>Ex&#225;menes Pedi&#225;tricos</h3><p>Toma de muestras adaptada para ni&#241;os, en la comodidad y seguridad de su hogar. Personal capacitado en atenci&#243;n pedi&#225;trica.</p><span class="service-tag">Atenci&#243;n infantil</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ai-section section" id="ia">
+        <div class="container">
+            <div class="ai-content animate">
+                <span class="section-label">Innovaci&#243;n</span>
+                <h2>An&#225;lisis de lunares con Inteligencia Artificial</h2>
+                <p>Nuestra tecnolog&#237;a de dermatoscop&#237;a digital usa algoritmos de deep learning entrenados con miles de im&#225;genes cl&#237;nicas para evaluar lesiones cut&#225;neas con alta precisi&#243;n.</p>
+                <div class="ai-features">
+                    <div class="ai-feature"><div class="ai-feature-icon">&#x1f4f8;</div><div><h4>Captura de alta resoluci&#243;n</h4><p>Dermatoscopio digital profesional con aumento de 20x para capturar detalles microsc&#243;picos de cada lunar.</p></div></div>
+                    <div class="ai-feature"><div class="ai-feature-icon">&#x1f9e0;</div><div><h4>An&#225;lisis con IA avanzada</h4><p>Algoritmo entrenado con +100.000 im&#225;genes dermatosc&#243;picas. Eval&#250;a asimetr&#237;a, bordes, color y di&#225;metro (ABCD).</p></div></div>
+                    <div class="ai-feature"><div class="ai-feature-icon">&#x1f4ca;</div><div><h4>Informe con nivel de riesgo</h4><p>Recibes un informe detallado con clasificaci&#243;n de riesgo y recomendaciones de seguimiento dermatol&#243;gico.</p></div></div>
+                    <div class="ai-feature"><div class="ai-feature-icon">&#x1f504;</div><div><h4>Seguimiento evolutivo</h4><p>Mapeo digital de tus lunares para comparar cambios en el tiempo. Control preventivo continuo.</p></div></div>
+                </div>
+            </div>
+            <div class="ai-visual animate animate-delay-2">
+                <div class="ai-demo">
+                    <div class="ai-demo-header"><div class="icon">&#x1f9e0;</div><span>ScienSolutions AI &#8212; An&#225;lisis Completado</span></div>
+                    <div class="ai-result"><div class="status">&#x2705; Bajo Riesgo &#8212; Lunar Benigno</div><div class="desc">Lesi&#243;n melanoc&#237;tica sim&#233;trica, bordes regulares, coloraci&#243;n homog&#233;nea. Sin criterios de alarma.</div></div>
+                    <div class="ai-metrics">
+                        <div class="ai-metric"><span class="val">97%</span><span class="lbl">Precisi&#243;n</span></div>
+                        <div class="ai-metric"><span class="val">&lt;30s</span><span class="lbl">An&#225;lisis</span></div>
+                        <div class="ai-metric"><span class="val">ABCD</span><span class="lbl">M&#233;todo</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works section" id="como-funciona">
+        <div class="container">
+            <div class="header">
+                <span class="section-label">Proceso</span>
+                <h2 class="section-title">&#191;C&#243;mo funciona?</h2>
+                <p class="section-subtitle">En 4 simples pasos, llevamos el laboratorio cl&#237;nico a la comodidad de tu hogar.</p>
+            </div>
+            <div class="steps">
+                <div class="step animate"><div class="step-number">1</div><h3>Agenda tu hora</h3><p>Elige el examen, fecha y horario que te acomode v&#237;a web, WhatsApp o tel&#233;fono.</p></div>
+                <div class="step animate animate-delay-1"><div class="step-number">2</div><h3>Visita a domicilio</h3><p>Un profesional certificado llega a tu hogar con todo el equipamiento necesario.</p></div>
+                <div class="step animate animate-delay-2"><div class="step-number">3</div><h3>Toma de muestra</h3><p>Proceso r&#225;pido e indoloro. En ni&#241;os usamos t&#233;cnicas especializadas para su comodidad.</p></div>
+                <div class="step animate animate-delay-3"><div class="step-number">4</div><h3>Recibe resultados</h3><p>En 24 horas recibes tu informe m&#233;dico por email o WhatsApp, con orientaci&#243;n incluida.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing section" id="precios">
+        <div class="container">
+            <div class="header">
+                <span class="section-label">Precios</span>
+                <h2 class="section-title">Planes y precios transparentes</h2>
+                <p class="section-subtitle">Sin costos ocultos. Todos nuestros precios incluyen visita a domicilio, toma de muestra, an&#225;lisis e informe m&#233;dico.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card animate">
+                    <span class="emoji">&#x1fa78;</span><h3>Ex&#225;menes de Sangre</h3><p class="desc">Perfil b&#225;sico o completo</p>
+                    <div class="price">$29.990</div><div class="price-from">desde &#183; por persona</div>
+                    <ul class="features"><li>Hemograma completo</li><li>Perfil lip&#237;dico</li><li>Glicemia</li><li>Funci&#243;n hep&#225;tica</li><li>Informe m&#233;dico digital</li></ul>
+                    <a href="#contacto" class="btn btn-secondary">Agendar</a>
+                </div>
+                <div class="price-card popular animate animate-delay-1">
+                    <div class="popular-badge">M&#225;s Popular</div>
+                    <span class="emoji">&#x1f9a0;</span><h3>Panel Viral Respiratorio</h3><p class="desc">PCR Multiplex completo</p>
+                    <div class="price">$49.990</div><div class="price-from">por persona</div>
+                    <ul class="features"><li>Influenza A y B</li><li>VRS (Virus Sincicial)</li><li>COVID-19 (SARS-CoV-2)</li><li>Adenovirus + Parainfluenza</li><li>Resultado en 24 horas</li><li>Orientaci&#243;n m&#233;dica</li></ul>
+                    <a href="#contacto" class="btn btn-primary">Agendar Ahora</a>
+                </div>
+                <div class="price-card animate animate-delay-2">
+                    <span class="emoji">&#x1f52c;</span><h3>Dermatoscop&#237;a con IA</h3><p class="desc">An&#225;lisis de hasta 10 lunares</p>
+                    <div class="price">$39.990</div><div class="price-from">por sesi&#243;n</div>
+                    <ul class="features"><li>Captura dermatosc&#243;pica digital</li><li>An&#225;lisis con IA (m&#233;todo ABCD)</li><li>Informe de riesgo por lunar</li><li>Mapeo digital evolutivo</li><li>Recomendaciones m&#233;dicas</li></ul>
+                    <a href="#contacto" class="btn btn-secondary">Agendar</a>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px;"><p style="color:var(--gray-500);font-size:0.95rem;">&#191;Necesitas un paquete familiar o geri&#225;trico? <a href="#contacto" style="color:var(--blue);font-weight:600;">Cont&#225;ctanos para un presupuesto personalizado &#8594;</a></p></div>
+        </div>
+    </section>
+
+    <section class="testimonials section" id="testimonios">
+        <div class="container">
+            <div class="header">
+                <span class="section-label">Testimonios</span>
+                <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+                <p class="section-subtitle">La confianza de las familias que ya eligieron ScienSolutions para sus ex&#225;menes a domicilio.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>&#8220;Mi hija de 3 a&#241;os ten&#237;a fiebre alta y no quer&#237;a ir al laboratorio. Llegaron a la casa, fueron s&#250;per cari&#241;osos con ella y en 24 horas ten&#237;amos el resultado del panel viral. Excelente servicio.&#8221;</p>
+                    <div class="testimonial-author"><div class="testimonial-avatar">CP</div><div><strong>Carolina P.</strong><small>Mam&#225; &#183; Las Condes</small></div></div>
+                </div>
+                <div class="testimonial-card animate animate-delay-1">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>&#8220;Para mi pap&#225; de 82 a&#241;os, ir al laboratorio era un calvario. Ahora le hacen sus ex&#225;menes en casa y el informe es s&#250;per completo. El an&#225;lisis de lunares con IA nos dio mucha tranquilidad.&#8221;</p>
+                    <div class="testimonial-author"><div class="testimonial-avatar">MR</div><div><strong>Marcelo R.</strong><small>Hijo cuidador &#183; Providencia</small></div></div>
+                </div>
+                <div class="testimonial-card animate animate-delay-2">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p>&#8220;Ten&#237;a un lunar que me preocupaba hace meses. Con la dermatoscop&#237;a con IA me dieron un informe detallado en el momento. Profesionales muy serios y confiables. Lo recomiendo 100%.&#8221;</p>
+                    <div class="testimonial-author"><div class="testimonial-avatar">AF</div><div><strong>Andrea F.</strong><small>Paciente &#183; &#209;u&#241;oa</small></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="header">
+                <span class="section-label">Preguntas Frecuentes</span>
+                <h2 class="section-title">&#191;Tienes dudas? Te ayudamos</h2>
+                <p class="section-subtitle">Encuentra respuestas a las preguntas m&#225;s comunes sobre nuestros servicios de ex&#225;menes a domicilio.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item active"><div class="faq-question" onclick="toggleFaq(this)">&#191;En qu&#233; comunas de Santiago atienden?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Actualmente cubrimos la mayor parte de la Regi&#243;n Metropolitana, incluyendo Las Condes, Providencia, &#209;u&#241;oa, Santiago Centro, Vitacura, La Reina, Pe&#241;alol&#233;n, Macul, La Florida y Puente Alto, entre otras. Estamos expandiendo nuestra cobertura constantemente.</div></div></div>
+                <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">&#191;Necesito orden m&#233;dica para realizarme ex&#225;menes?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No es obligatorio para la mayor&#237;a de los ex&#225;menes. Sin embargo, si deseas que tu Isapre o Fonasa cubra parte del costo, necesitar&#225;s una orden m&#233;dica. Nosotros te orientamos en el proceso.</div></div></div>
+                <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">&#191;C&#243;mo es la toma de muestra en ni&#241;os peque&#241;os?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Nuestro personal est&#225; capacitado en atenci&#243;n pedi&#225;trica. Usamos t&#233;cnicas suaves y equipamiento de tama&#241;o adecuado. Para el panel viral, la toma nasofar&#237;ngea dura menos de 10 segundos. Los ni&#241;os se sienten mucho m&#225;s tranquilos en su entorno familiar.</div></div></div>
+                <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">&#191;En cu&#225;nto tiempo recibo los resultados?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Los resultados del panel viral respiratorio y ex&#225;menes de sangre b&#225;sicos se entregan en 24 horas. El an&#225;lisis dermatosc&#243;pico con IA entrega un informe preliminar el mismo d&#237;a. Los resultados se env&#237;an por email y/o WhatsApp seg&#250;n tu preferencia.</div></div></div>
+                <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">&#191;El an&#225;lisis de lunares con IA reemplaza al dermat&#243;logo?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">No. Nuestro an&#225;lisis con IA es una herramienta de screening y detecci&#243;n temprana que complementa la evaluaci&#243;n dermatol&#243;gica. Si detectamos un lunar de riesgo moderado o alto, te derivamos inmediatamente a un dermat&#243;logo para evaluaci&#243;n presencial.</div></div></div>
+                <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">&#191;Qu&#233; medidas de bioseguridad toman?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Nuestros profesionales siguen estrictos protocolos de bioseguridad: uso de EPP completo, material desechable, desinfecci&#243;n de equipos entre cada paciente, y cadena de fr&#237;o certificada para el transporte de muestras.</div></div></div>
+                <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)">&#191;Aceptan seguros de salud o Fonasa/Isapre?<span class="faq-toggle">+</span></div><div class="faq-answer"><div class="faq-answer-inner">Emitimos boleta y detalle de prestaciones para que puedas solicitar reembolso en tu Isapre o seguro complementario. Estamos trabajando en convenios directos con las principales Isapres. Para Fonasa, aceptamos bonos de atenci&#243;n en modalidad libre elecci&#243;n.</div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+        <div class="container">
+            <div class="contact-info animate">
+                <span class="section-label">Contacto</span>
+                <h2>Agenda tu examen a domicilio</h2>
+                <p>Completa el formulario o cont&#225;ctanos directamente por WhatsApp. Te respondemos en menos de 1 hora en horario h&#225;bil.</p>
+                <div class="contact-methods">
+                    <div class="contact-method"><div class="contact-method-icon">&#x1f4f1;</div><div><strong>WhatsApp</strong><span>+56 9 XXXX XXXX</span></div></div>
+                    <div class="contact-method"><div class="contact-method-icon">&#x1f4e7;</div><div><strong>Email</strong><span>contacto@sciensolutions.cl</span></div></div>
+                    <div class="contact-method"><div class="contact-method-icon">&#x1f550;</div><div><strong>Horario de atenci&#243;n</strong><span>Lunes a S&#225;bado &#183; 7:00 a 20:00 hrs</span></div></div>
+                    <div class="contact-method"><div class="contact-method-icon">&#x1f4cd;</div><div><strong>Cobertura</strong><span>Santiago y Regi&#243;n Metropolitana</span></div></div>
+                </div>
+            </div>
+            <div class="contact-form animate animate-delay-2">
+                <h3>&#x1f4c5; Solicitar Agendamiento</h3>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group"><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required></div>
+                        <div class="form-group"><label for="telefono">Tel&#233;fono / WhatsApp</label><input type="tel" id="telefono" name="telefono" placeholder="+56 9 ..." required></div>
+                    </div>
+                    <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="tu@email.com" required></div>
+                    <div class="form-group"><label for="servicio">Servicio de inter&#233;s</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="panel-viral">Panel Viral Respiratorio</option>
+                            <option value="dermatoscopia">An&#225;lisis de Lunares con IA</option>
+                            <option value="sangre">Ex&#225;menes de Sangre</option>
+                            <option value="geriatrico">Check-up Geri&#225;trico</option>
+                            <option value="pediatrico">Ex&#225;menes Pedi&#225;tricos</option>
+                            <option value="otro">Otro / Consulta general</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group"><label for="comuna">Comuna</label><input type="text" id="comuna" name="comuna" placeholder="Ej: Las Condes"></div>
+                        <div class="form-group"><label for="pacientes">N&#176; de pacientes</label>
+                            <select id="pacientes" name="pacientes"><option value="1">1 persona</option><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option><option value="5+">5 o m&#225;s</option></select>
+                        </div>
+                    </div>
+                    <div class="form-group"><label for="mensaje">Mensaje o indicaciones especiales</label><textarea id="mensaje" name="mensaje" placeholder="Cu&#233;ntanos si tienes alguna indicaci&#243;n especial, preferencia horaria, etc."></textarea></div>
+                    <button type="submit" class="btn btn-primary">&#x1f4c5; Solicitar Agendamiento</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><div class="logo-icon">&#x1f9ec;</div><div>ScienSolutions<small>by Urano IA</small></div></a>
+                    <p>La ciencia va a tu hogar. Ex&#225;menes cl&#237;nicos a domicilio con tecnolog&#237;a de punta en Santiago, Chile. Potenciado por Urano IA.</p>
+                    <div class="footer-social"><a href="https://uranoia.cl" target="_blank" title="Urano IA">&#x1f310;</a><a href="#" title="Instagram">&#x1f4f7;</a><a href="#" title="LinkedIn">&#x1f4bc;</a></div>
+                </div>
+                <div><h4>Servicios</h4><ul><li><a href="#servicios">Panel Viral Respiratorio</a></li><li><a href="#ia">Dermatoscop&#237;a con IA</a></li><li><a href="#servicios">Ex&#225;menes de Sangre</a></li><li><a href="#servicios">Check-up Geri&#225;trico</a></li><li><a href="#servicios">Ex&#225;menes Pedi&#225;tricos</a></li></ul></div>
+                <div><h4>Empresa</h4><ul><li><a href="#por-que">&#191;Por qu&#233; a domicilio?</a></li><li><a href="#como-funciona">C&#243;mo funciona</a></li><li><a href="#testimonios">Testimonios</a></li><li><a href="#faq">Preguntas frecuentes</a></li><li><a href="https://uranoia.cl" target="_blank">Urano IA</a></li></ul></div>
+                <div><h4>Contacto</h4><ul><li><a href="#">+56 9 XXXX XXXX</a></li><li><a href="mailto:contacto@sciensolutions.cl">contacto@sciensolutions.cl</a></li><li><a href="#">Santiago, Chile</a></li><li><a href="#">Lun-S&#225;b 7:00-20:00</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><span>&#169; 2026 ScienSolutions by <a href="https://uranoia.cl" target="_blank">Urano IA</a>. Todos los derechos reservados.</span><span>Fundado por Claudio Valdes, Bioqu&#237;mico</span></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/569XXXXXXXX?text=Hola%2C%20quiero%20agendar%20un%20examen%20a%20domicilio" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.052 31.2l6.012-1.93A15.89 15.89 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.598c-.39 1.1-1.932 2.014-3.164 2.28-.844.18-1.946.324-5.66-1.216-4.748-1.97-7.806-6.792-8.04-7.108-.226-.316-1.9-2.532-1.9-4.83s1.2-3.428 1.628-3.898c.39-.428.918-.618 1.22-.618.152 0 .288.008.41.014.428.018.642.042.924.716.354.844 1.216 2.96 1.322 3.178.108.218.216.514.066.81-.14.302-.264.436-.482.684-.218.248-.424.438-.642.706-.198.234-.422.484-.176.912.246.426 1.094 1.804 2.35 2.924 1.616 1.438 2.978 1.886 3.402 2.094.428.21.676.176.924-.106.254-.288 1.088-1.268 1.378-1.702.284-.434.574-.362.966-.216.394.142 2.504 1.182 2.932 1.396.428.218.714.324.82.502.104.178.104 1.032-.286 2.132z"/></svg>
+        <span class="whatsapp-tooltip">&#161;Escr&#237;benos por WhatsApp!</span>
+    </a>
+
+    <script>
+        const navbar=document.getElementById('navbar');
+        window.addEventListener('scroll',()=>{navbar.classList.toggle('scrolled',window.scrollY>50);});
+        function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+        document.querySelectorAll('.nav-links a').forEach(l=>{l.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('open');});});
+        function toggleFaq(el){const item=el.parentElement;const wasActive=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));if(!wasActive)item.classList.add('active');}
+        const observer=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+        document.querySelectorAll('.animate').forEach(el=>observer.observe(el));
+        function handleSubmit(e){e.preventDefault();const f=e.target;const nombre=f.nombre.value;const telefono=f.telefono.value;const servicioTexto=f.servicio.options[f.servicio.selectedIndex].text;const comuna=f.comuna.value;const msg=`Hola, soy ${nombre}. Quiero agendar un examen a domicilio.\n\nServicio: ${servicioTexto}\nTel\u00e9fono: ${telefono}\nComuna: ${comuna}`;const waUrl=`https://wa.me/569XXXXXXXX?text=${encodeURIComponent(msg)}`;const btn=f.querySelector('button[type="submit"]');const orig=btn.innerHTML;btn.innerHTML='\u2705 \u00a1Solicitud enviada!';btn.style.background='#4caf50';setTimeout(()=>{window.open(waUrl,'_blank');btn.innerHTML=orig;btn.style.background='';},1500);}
+        document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t){t.scrollIntoView({behavior:'smooth',block:'start'});}});});
+    </script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalBusiness","name":"ScienSolutions","description":"Ex\u00e1menes cl\u00ednicos a domicilio en Santiago, Chile.","url":"https://sciensolutions.cl","telephone":"+56 9 XXXX XXXX","email":"contacto@sciensolutions.cl","address":{"@type":"PostalAddress","addressLocality":"Santiago","addressRegion":"Regi\u00f3n Metropolitana","addressCountry":"CL"},"areaServed":{"@type":"City","name":"Santiago"},"founder":{"@type":"Person","name":"Claudio Valdes","jobTitle":"Bioqu\u00edmico"},"parentOrganization":{"@type":"Organization","name":"Urano IA","url":"https://uranoia.cl"},"hasOfferCatalog":{"@type":"OfferCatalog","name":"Ex\u00e1menes a Domicilio","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"MedicalTest","name":"Panel Viral Respiratorio"},"price":"49990","priceCurrency":"CLP"},{"@type":"Offer","itemOffered":{"@type":"MedicalTest","name":"Dermatoscop\u00eda Digital con IA"},"price":"39990","priceCurrency":"CLP"},{"@type":"Offer","itemOffered":{"@type":"MedicalTest","name":"Ex\u00e1menes de Sangre a Domicilio"},"price":"29990","priceCurrency":"CLP"}]}}</script>
+</body>
+</html>
